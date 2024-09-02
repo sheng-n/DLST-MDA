@@ -1,7 +1,7 @@
 import sys
 import torch.nn as nn
 from numpy import interp
-from model.cnn_gcnmulti import GCNNetmuti
+from cnn_gcnmulti import GCNNetmuti
 from utils import *
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from sklearn.metrics import roc_curve, roc_auc_score, precision_recall_curve, auc
