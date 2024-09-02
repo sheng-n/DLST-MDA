@@ -8,9 +8,8 @@ The code for paper "Deep learning-based integration of sequence and structure in
   * `miRNA_drug_matrix.xlsx` contains known miRNA-drug association;
   * `miRNA_sequences.xlsx` contains miRNA ID (from miRBase) and sequences;
 + `code/`
-  * `process_data.py` is used to 
+  * `process_data.py` is used to preprocess data and divides the dataset;
   * `utils.py` contains preprocessing function of the data;
-  * `data_preprocess.py` contains the preprocess of data and divides the dataset;
   * `cnn_gcnmulti.py` contains DLST-MDA's model layer;
   * `train.py` contains training and testing code;
 
