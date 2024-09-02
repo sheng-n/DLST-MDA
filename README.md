@@ -7,6 +7,7 @@ The code for paper "Deep learning-based integration of sequence and structure in
   * `drug_id_smiles.xlsx` contain drug ID (from DrugBank) and SMILES;
   * `miRNA_drug_matrix.xlsx` contain known miRNA-drug association;
   * `miRNA_sequences.xlsx` contain miRNA ID (from miRBase) and sequences;
+  * `train_test_data.rar` contain training and test sets at 5-cv;
 + `code/`
   * `process_data.py` is used to calculate lncRNA/miRNA k-mer features and construct knn graph (attribute graph) of lncRNA/miRNA/disease.
   * `utils.py` contains preprocessing function of the data;
