@@ -9,7 +9,7 @@ The code for paper "Deep learning-based integration of sequence and structure in
   * `miRNA_sequences.xlsx` contain miRNA ID (from miRBase) and sequences;
   * `train_test_data.rar` contain training and test sets at 5-cv;
 + `code/`
-  * `process_data.py` is used to calculate lncRNA/miRNA k-mer features and construct knn graph (attribute graph) of lncRNA/miRNA/disease.
+  * `process_data.py` is used to 
   * `utils.py` contains preprocessing function of the data;
   * `data_preprocess.py` contains the preprocess of data;
   * `cnn_gcnmulti.py` contains SSCLMD's model layer;
@@ -24,7 +24,7 @@ The code for paper "Deep learning-based integration of sequence and structure in
 ## 3. Quick Start
 Here we provide a example to predict the MDA scores:
 
-1. Download and upzip our data and code files
+1. Download zip our data and code files
 2. Run data_preparation.py and calculating_similarity.py to obtain lncRNA/miRNA/disease attribute graph and intra_edge of topology graph 
 3. Run main.py (in file-- dataset1/LDA.edgelist, neg_sample-- dataset1/non_LDA.edgelist, task_type--LDAl)
 
