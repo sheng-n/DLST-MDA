@@ -79,17 +79,14 @@ CHARISOSMISET = {"#": 29, "%": 30, ")": 31, "(": 1, "+": 32, "-": 33, "/": 34, "
 CHARISOSMILEN = 66
 
 
-
-#all_prots 列表中存储了所有数据集中出现的蛋白质序列，这些蛋白质序列将被用于后续的数据处理和模型训练。
 all_prots = []
 fpath='data/'
-# 读取整个 Excel 文件
 drugs = pd.read_excel('data/drug_id_smiles.xlsx')
 rna = pd.read_excel('data/miRNA_sequences.xlsx')
 ligands = drugs['smiles']
 proteins = rna['Sequence']
 
-ass=pd.read_excel('data/miRNA_drug_matrix.xlsx', index_col=0)   # 关系矩阵导入
+ass=pd.read_excel('data/miRNA_drug_matrix.xlsx', index_col=0)   
 Positive = json.load(open("data/Positive.txt"))
 Negetive = json.load(open("data/Negative.txt"))
 Potrain_fold=[[] for i in range(5)]
@@ -162,9 +159,6 @@ for smile in compound_iso_smiles:
     g = smile_to_graph(smile)
     smile_graph[smile] = g
 
-
-
-# 数据处理转换成需要的格式内容
 for i in range(5):
     processed_data_file_train = 'data/processed/'  + '_train'+str(i)+'.pt'
     processed_data_file_test = 'data/processed/'+ '_test'+str(i)+'.pt'
