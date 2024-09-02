@@ -4,9 +4,9 @@ Submit journal xx
 The code for paper "Deep learning-based integration of sequence and structure information for efficient predicting miRNA-drug associations". The repository is organized as follows:
 
 + `data/`
-  * `drug_id_smiles.xlsx` contain drug ID (from DrugBank) and SMILES;
-  * `miRNA_drug_matrix.xlsx` contain known miRNA-drug association;
-  * `miRNA_sequences.xlsx` contain miRNA ID (from miRBase) and sequences;
+  * `drug_id_smiles.xlsx` contains drug ID (from DrugBank) and SMILES;
+  * `miRNA_drug_matrix.xlsx` contains known miRNA-drug association;
+  * `miRNA_sequences.xlsx` contains miRNA ID (from miRBase) and sequences;
 + `code/`
   * `process_data.py` is used to 
   * `utils.py` contains preprocessing function of the data;
@@ -15,10 +15,10 @@ The code for paper "Deep learning-based integration of sequence and structure in
   * `train.py` contains training and testing code;
 
 ## 2. Dependencies
-* numpy == 1.21.1
-* torch == 2.0.0+cu118
-* sklearn == 0.24.1
-* torch-geometric == 2.3.0
+* numpy==1.24.3
+* torch==2.3.0+cu121
+* sklearn==1.3.2
+* torch_geometric==2.5.3
 
 ## 3. Quick Start
 Here we provide a example to predict the MDA scores:
