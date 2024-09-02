@@ -7,12 +7,11 @@ The code for paper "Deep learning-based integration of sequence and structure in
   * `drug_id_smiles.xlsx` contain drug ID (from DrugBank) and SMILES;
   * `miRNA_drug_matrix.xlsx` contain known miRNA-drug association;
   * `miRNA_sequences.xlsx` contain miRNA ID (from miRBase) and sequences;
-  * `train_test_data.rar` contain training and test sets at 5-cv;
 + `code/`
   * `process_data.py` is used to 
   * `utils.py` contains preprocessing function of the data;
-  * `data_preprocess.py` contains the preprocess of data;
-  * `cnn_gcnmulti.py` contains SSCLMD's model layer;
+  * `data_preprocess.py` contains the preprocess of data and divides the dataset;
+  * `cnn_gcnmulti.py` contains DLST-MDA's model layer;
   * `train.py` contains training and testing code;
 
 ## 2. Dependencies
@@ -25,8 +24,8 @@ The code for paper "Deep learning-based integration of sequence and structure in
 Here we provide a example to predict the MDA scores:
 
 1. Download zip our data and code files
-2. Run data_preparation.py and calculating_similarity.py to obtain lncRNA/miRNA/disease attribute graph and intra_edge of topology graph 
-3. Run main.py (in file-- dataset1/LDA.edgelist, neg_sample-- dataset1/non_LDA.edgelist, task_type--LDAl)
+3. Run process_data.py to obtain train and test dataset 
+4. Run train.py to calculate the MDA scores
 
 ## 4. Contacts
 If you have any questions, please email Nan Sheng (shengnan@jlu.edu.cn)
