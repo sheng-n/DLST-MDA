@@ -1,5 +1,5 @@
 # DLST-MDA
-Submit journal xx
+Submit journal IEEE Journal of Biomedical and Health Informatics
 ## 1. Overview
 The code for paper "Deep learning-based integration of sequence and structure information for efficient predicting miRNA-drug associations". The repository is organized as follows:
 
