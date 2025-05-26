@@ -1,4 +1,5 @@
 # DLST-MDA
+## Paper [**[Paper link]**](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.5c00038 "Click") 
 Cite: Sheng N, Liu Y, Gao L, et al. Deep-Learning-Based Integration of Sequence and Structure Information for Efficiently Predicting miRNA–Drug Associations[J]. Journal of Chemical Information and Modeling, 2025.
 ## 1. Overview
 The code for paper "Deep learning-based integration of sequence and structure information for efficient predicting miRNA-drug associations". The repository is organized as follows:
